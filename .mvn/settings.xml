@@ -28,6 +28,7 @@
     </server>
 
     <!-- Used for gh-pages-scm publish via maven-scm-publish-plugin -->
+    <!-- Don't thinks this is needed anymore as we are not deploying via scm publish but rather using GHA for that -->
     <server>
       <id>gh-pages-scm</id>
       <configuration>
@@ -37,6 +38,7 @@
     </server>
 
     <!-- Github deployments (site) -->
+    <!-- Don't think this is needed anymore, we use a GHA to deploy that is separate from this -->
     <server>
       <id>github</id>
       <username>${env.CI_DEPLOY_USERNAME}</username>
